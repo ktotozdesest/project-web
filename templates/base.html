@@ -3,48 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link type="text/css" href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='javascript/navbar.js')}}"></script>
     <title>{{title}}</title>
 </head>
 <body>
     <header>
-        <a>hui</a>
-        <a>hui</a>
-        <a>hui</a>
+        <div id="navbar">
+            {% block navbar %}{% endblock %}
+        </div>
     </header>
     <main>
         {% block content %}{% endblock %}
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
     </main>
 </body>
 </html>
