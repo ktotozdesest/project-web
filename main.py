@@ -8,8 +8,9 @@ app.config['SECRET_KEY'] = 'sec-key'
 def start():
     param = {}
     param['title'] = 'clicker'
-    return render_template('base.html')
+    return render_template('start-window.html', **param)
 
 
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
+
