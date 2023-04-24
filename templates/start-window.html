@@ -1,10 +1,18 @@
 {% extends "base.html" %}
 {% block navbar %}
-    <a><img src="{{ url_for('static', filename='img/play.png') }}"></a>
-    <a><img src="{{ url_for('static', filename='img/rules.png') }}"></a>
-    <a><img src="{{ url_for('static', filename='img/sign-in.png') }}"></a>
+    <a href="login"><img src="{{ url_for('static', filename='img/sign-in.png') }}"></a>
+    <a href="game"><img src="{{ url_for('static', filename='img/play.png') }}"></a>
+    <a href="rules"><img src="{{ url_for('static', filename='img/rules.png') }}"></a>
 {% endblock %}
-{% block content %}]
-
-    <a href="registration">registration</a>
+{% block content %}
+    <img src="{{ url_for('static', filename='img/placeholder.png') }}">
+    <p><a href="#about">About project</a></p>
+    <p><a href="login">Log in</a></p>
+    <p><a href="game">play</a></p>
+    <p><a href="rules">rules</a></p>
+    <img src="{{ url_for('static', filename='img/placeholder.png') }}">
+    <h1 id="about">About project</h1>
+    <p>Project is project. Yandex ordered me to do project. And I do this clicker.</p>
+    <p>In this clicker you can WAIT.</p>
+    <img src="{{ url_for('static', filename='img/placeholder.png') }}">
 {% endblock %}
