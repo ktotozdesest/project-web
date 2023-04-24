@@ -1,4 +1,4 @@
-var ss = 1000000000000;
+var ss = 0;
 var sped = 1;
 setInterval(function(){
     ss = ss + sped / 250;
