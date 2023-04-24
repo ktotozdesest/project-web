@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id="game">
+        <h3 id="time-label"></h3>
+        <ol id="side-market">
+            {% for i in products %}
+                <li class="side-market-product">{{ products[loop.index0] }} <img src="{{url_for('static', filename='img/fert-t' + loop.index|string + '.png')}}">
+                    <button onclick="up({{ loop.index0 }})">BUY for {{ 100 ** loop.index0 }}m</button><br>
+                    GET + {{ 110 ** loop.index0 * 0.001 }} sec per sec
+                </li>
+            {% endfor %}
+        </ol>
+    </div>
+    <button class="stone"><img src="{{url_for('static', filename='img/stone.png')}}" class="stone"></button>
+    <form action="/1/" method="POST">
+        <input type="submit" class="btn btn-dark" value="Save">
+    </form>
+{% endblock %}
