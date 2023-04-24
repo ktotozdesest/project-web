@@ -1,3 +1,5 @@
+![stone](https://user-images.githubusercontent.com/121133559/233876862-e7bb9d54-af9c-423e-8e90-ac81e1f559f6.png)
+
 # Симулятор камня
 
 Это исходный код симулятора камня.
